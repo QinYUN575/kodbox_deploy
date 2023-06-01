@@ -1,17 +1,3 @@
-# Kodbox deploy
-
-## About Kodbox
-
-[Kodbox](https://github.com/kalcaddle/kodbox)
-
-
-# Deploy Kodbox
-
-## Deploy Kodbox with docker-compose
-
-### Modify data path in docker-compose.yaml
-
-```yaml
 version: '3.0'
 services:
   kodcloud:
@@ -46,9 +32,3 @@ services:
       - /Users/tsmax/docker/redis/redis.conf:/etc/redis/redis.conf
     ports:
       - 9005:6379
-```
-
-```shell
-# Build image
-docker-compose -f docker-compose.yaml up -d
-```
